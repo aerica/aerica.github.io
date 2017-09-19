@@ -67,6 +67,21 @@ h1{
 	float: left;
 	padding:0 15px;
 }
+#nav a{
+	text-decoration: none;
+	color:black;
+}
+#nav a:hover{
+	color:#e73a00;
+}
+
+#active span{
+	position: relative;
+	color:#e73a00;
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
 
 .gallery-item-cont{
 	width: 50%;
@@ -123,7 +138,8 @@ h1{
 	display: block; 
 	font-family: 'Varela Round', sans-serif;
 	line-height: 100%;
-	transition:padding 0.025s linear;
+	transition:padding 0.025s linear,
+				letter-spacing 0.025s linear;
 	box-shadow: 0 2px 4px rgba(0,0,0,0.35);
 }
 
@@ -131,4 +147,5 @@ h1{
 	background-color:rgba(0,0,0,0.75);
 	box-shadow: 0 5px 10px rgba(0,0,0,0.25);
 	padding: 20px 35px;
+	letter-spacing: 1px;
 }
