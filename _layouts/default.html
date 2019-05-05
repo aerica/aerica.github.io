@@ -3,47 +3,18 @@
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed" rel="stylesheet">
+			<link rel="stylesheet" href="/assets/css/styles.css">
+			<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1" crossorigin="anonymous">
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
 			<div class="container">
-			
+
 			{{ content }}
-			
+
 			</div><!-- /.container -->
 			<div id="footer-cont">
-		
-		<div id="footer">	
-			<div id="footer-nav">
-				<p><a href="contact.html">Get in touch</a> or find me on social media.</p>
-				<ul>
-					<li><a href="https://dribbble.com/aerica">
-					<span class="fa-stack">
-					  <i class="fa fa-circle fa-stack-2x"></i>
-					  <i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
-					</span></a></li>
-					<li><a href="https://www.instagram.com/aericalovett/">
-					<span class="fa-stack">
-					  <i class="fa fa-circle fa-stack-2x"></i>
-					  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-						</span></a></li>
-					<li><a href="https://twitter.com/aericalovett">
-					<span class="fa-stack">
-					  <i class="fa fa-circle fa-stack-2x"></i>
-					  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-						</span></a></li>
-				</ul>
+				{% include footerContent-white.html %}
 			</div>
-		</div>
-
-	</div>
 		</body>
 	</html>
