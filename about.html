@@ -1,72 +1,15 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>aerica&bullet;lovett | about | designer&bullet;illustrator</title>
-<link href="css/aerica-design.css" rel="stylesheet" type="text/css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/aerica-design.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-</head>
+---
+layout: default
+title: About
+
+namespace: about
+
+permalink: /about
+---
 
 
-<body>
-	<div id="header-cont">
-		
-		<div id="header">	
-			<a href="index.html"><img width="150" src="assets/adesign-justwords.svg"></a>
-			<div id="nav">
-				<ul>
-					<li><a href="index.html">work</a></li>
-					<li><a href="contact.html">contact</a></li>
-					<li id="active"><span>&bullet;</span><a href="about.html">about</a></li>
-				</ul>
-			</div>
-		</div>
-
-	</div>
-	
-	<div id="intro">
-		<h1>— creative and strategic designs for people and brands.</h1>
-	</div>
-
-	<div id="content-cont">
-		<div id="content">
-			<h2>Aerica Lovett</h2>
-			<p>Designing for a Boston-based cybersecurity company has been my day job for over 2 years. I work closely with the marketing team to deliver visually stunning content for sales, demand gen, and everything else in between. Bringing strategic content together with brand consistency and excellent visuals is my specialty.</p>
-			<p>By night, I fill my time sketching in my notebooks or working on my portfolio after a home cooked meal. </p>
-			<a class="btn-primary t-center" href="contact.html">let's talk</a>
-		</div>
-	</div>
-
-<div id="footer-cont">
-		
-		<div id="footer">	
-			<div id="footer-nav">
-				<p><a href="contact.html">Get in touch</a> or find me on social media.</p>
-				<ul>
-					<li><a href="https://dribbble.com/aerica">
-					<span class="fa-stack">
-					  <i class="fa fa-circle fa-stack-2x"></i>
-					  <i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
-					</span></a></li>
-					<li><a href="https://www.instagram.com/aericalovett/">
-					<span class="fa-stack">
-					  <i class="fa fa-circle fa-stack-2x"></i>
-					  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-						</span></a></li>
-					<li><a href="https://twitter.com/aericalovett">
-					<span class="fa-stack">
-					  <i class="fa fa-circle fa-stack-2x"></i>
-					  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-						</span></a></li>
-				</ul>
-			</div>
-		</div>
-
-	</div>
-	
-</body>
-</html>
+{% include navContent.html %}
+<div class="container">
+  {% include aboutContent.html %}
+</div>
+{% include footerContent-red.html %}

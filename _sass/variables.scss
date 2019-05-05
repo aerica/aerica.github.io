@@ -1,6 +1,9 @@
 $font-montserrat: 'Montserrat', sans-serif;
 $font-roboto-cond:'Roboto Condensed', sans-serif;
 
+$bold:700;
+$regular:400;
+
 $display-small:24px;
 $display-regular:32px;
 $display-large:48px;
@@ -8,3 +11,20 @@ $display-large:48px;
 $body-small:12px;
 $body-regular:16px;
 $body-large:20px;
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 12px !default;
+
+$white:#ffffff;
+
+$black:#181818;
+$grey:#6A6A6A;
+
+$red:#B73C4B;
+
+$spacing-large:72px;
+$spacing-regular:48px;
+$spacing-small:32px;
+$spacing-xsmall:20px;
+
+$default-letter-spacing:1.5px;

@@ -1,7 +1,49 @@
-body, h1, h2, h3, h4, h5, h6, p, a{
+body{
   font-family: $font-montserrat;
+  color:$black;
 
-  p, a{
-    font-size:$body-regular;
+  h1, h2, h3{
+    font-weight:$bold;
   }
+  h1{
+    font-size:$display-large;
+    line-height: 150%;
+    span{font-weight: $regular;}
+    padding-bottom: $spacing-large;
+  }
+  h2{
+    font-size:$display-regular;
+  }
+  h3{
+    font-size:$display-small;
+  }
+  h4, h5, h6{
+    font-family: $font-roboto-cond;
+  }
+  p, a, ul, li{
+    font-size:$body-regular;
+    font-weight:$regular;
+  }
+  p.large{font-size:$body-large;}
+
+  .btn{
+    padding-top:$spacing-xsmall;
+    padding-bottom:$spacing-xsmall;
+    padding-left:$spacing-small;
+    padding-right:$spacing-small;
+    font-family: $font-roboto-cond;
+    text-transform: uppercase;
+    letter-spacing: $default-letter-spacing;
+    &.primary{
+      &.on-white{
+        color:$white;
+        background:$red;
+      }
+    }
+  }
+  .hero{
+    padding-top:$spacing-large;
+    padding-bottom:$spacing-large;
+  }
+
 }

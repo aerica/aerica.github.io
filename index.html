@@ -1,7 +1,13 @@
 ---
 layout: default
 title: Aerica Lovett Design
+
+namespace: home
+
+permalink: /
 ---
-<div class="blurb">
-	<h1>Hi there, I'm Aerica Lovett!</h1>
-	</div><!-- /.blurb -->
+{% include navContent.html %}
+<div class="container hero">
+  {% include homeContent.html %}
+</div>
+{% include footerContent-white.html %}
