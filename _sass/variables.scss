@@ -3,6 +3,7 @@ $font-roboto-cond:'Roboto Condensed', sans-serif;
 
 $bold:700;
 $regular:400;
+$light:300;
 
 $display-small:24px;
 $display-regular:32px;
@@ -16,11 +17,10 @@ $grid-columns: 12 !default;
 $grid-gutter-width: 12px !default;
 
 $white:#ffffff;
-
 $black:#181818;
 $grey:#6A6A6A;
-
 $red:#B73C4B;
+$red-gradient:linear-gradient(155.6deg, #A93D5D -81.56%, #B63B4A 45.22%, #7F293E 164.31%);
 
 $spacing-large:72px;
 $spacing-regular:48px;

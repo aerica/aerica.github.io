@@ -1,0 +1,20 @@
+.quote{
+  background:$red-gradient;
+  color:$white;
+  padding-top:$spacing-regular;
+  padding-bottom:$spacing-regular;
+  text-align: center;
+  div{
+    p{
+      font-family:$font-roboto-cond;
+      font-size: $display-regular;
+      font-weight: $light;
+      &.source a{
+        font-size:$body-small;
+        color:$white !important;
+        text-transform: uppercase;
+        letter-spacing: $default-letter-spacing;
+      }
+    }
+  }
+}

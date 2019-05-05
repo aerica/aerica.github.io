@@ -33,7 +33,7 @@ text-align: center;
     }
     }
   &.red{
-    background: linear-gradient(155.6deg, #A93D5D -81.56%, #B63B4A 45.22%, #7F293E 164.31%);
+    background: $red-gradient;
     h4{
       color:$white;
     }
