@@ -10,6 +10,14 @@ body{
     line-height: 150%;
     span{font-weight: $regular;}
     padding-bottom: $spacing-large;
+    &.home{
+      padding-right:$spacing-xxlarge;
+      padding-top:$spacing-regular;
+    }
+    &.about{
+      //padding-right:$spacing-xxlarge;
+      padding-top:$spacing-large;
+    }
   }
   h2{
     font-size:$display-regular;
@@ -19,12 +27,23 @@ body{
   }
   h4, h5, h6{
     font-family: $font-roboto-cond;
+    text-transform: uppercase;
+    letter-spacing: $default-letter-spacing;
+  }
+  h4{
+    &.about{
+      text-transform: capitalize;
+      letter-spacing: 0;
+
+    }
   }
   p, a, ul, li{
     font-size:$body-regular;
     font-weight:$regular;
   }
-  p.large{font-size:$body-large;}
+  p.large{
+    font-size:$body-large;
+    margin-bottom: $display-regular}
 
   .btn{
     padding-top:$spacing-xsmall;
@@ -42,8 +61,11 @@ body{
     }
   }
   .hero{
-    padding-top:$spacing-large;
+    padding-top:$spacing-xlarge;
     padding-bottom:$spacing-large;
+    &.about{
+      padding-bottom:$spacing-small;
+    }
   }
 
 }
