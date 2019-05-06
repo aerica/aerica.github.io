@@ -16,7 +16,7 @@ a{
   letter-spacing: $default-letter-spacing;
   img{
     &:hover{
-      border-bottom: none;
+      border-bottom: none !important;
     }
   }
 }

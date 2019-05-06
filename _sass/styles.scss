@@ -15,7 +15,6 @@ body{
       padding-top:$spacing-regular;
     }
     &.about{
-      //padding-right:$spacing-large;
       padding-top:$spacing-xlarge;
       font-size:$display-xregular;
     }
@@ -47,21 +46,7 @@ body{
     font-size:$body-large;
     margin-bottom: $display-regular}
 
-  .btn{
-    padding-top:$spacing-xsmall;
-    padding-bottom:$spacing-xsmall;
-    padding-left:$spacing-small;
-    padding-right:$spacing-small;
-    font-family: $font-roboto-cond;
-    text-transform: uppercase;
-    letter-spacing: $default-letter-spacing;
-    &.primary{
-      &.on-white{
-        color:$white;
-        background:$red;
-      }
-    }
-  }
+
   .hero{
     padding-top:$spacing-xlarge;
     padding-bottom:$spacing-large;
@@ -77,5 +62,26 @@ body{
   .content{
     padding-top:$spacing-regular;
     padding-bottom:$spacing-regular;
+  }
+  a{
+    text-decoration: none;
+    color:$red;
+    &.btn{
+      padding-top:$spacing-xsmall;
+      padding-bottom:$spacing-xsmall;
+      padding-left:$spacing-small;
+      padding-right:$spacing-small;
+      font-family: $font-roboto-cond;
+      text-transform: uppercase;
+      letter-spacing: $default-letter-spacing;
+      text-decoration: none;
+      border-bottom: none;
+      &.primary{
+        &.on-white{
+          color:$white;
+          background:$red;
+        }
+      }
+    }
   }
 }
