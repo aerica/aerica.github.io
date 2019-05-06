@@ -66,12 +66,16 @@ body{
     padding-top:$spacing-xlarge;
     padding-bottom:$spacing-large;
     &.about{
-      padding-bottom:$spacing-small;
+      padding-bottom:$spacing-xxsmall;
     }
   }
   img{
     &.about{
       max-width: 100%;
     }
+  }
+  .content{
+    padding-top:$spacing-regular;
+    padding-bottom:$spacing-regular;
   }
 }

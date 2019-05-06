@@ -33,7 +33,7 @@ ul{
     a{
       &:hover{
         text-decoration: none;
-        border-bottom: solid 1px $red;
+        border-bottom: $link-underline;
       }
     }
   }
