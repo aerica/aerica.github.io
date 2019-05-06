@@ -15,8 +15,9 @@ body{
       padding-top:$spacing-regular;
     }
     &.about{
-      //padding-right:$spacing-xxlarge;
-      padding-top:$spacing-large;
+      //padding-right:$spacing-large;
+      padding-top:$spacing-xlarge;
+      font-size:$display-xregular;
     }
   }
   h2{
@@ -29,12 +30,13 @@ body{
     font-family: $font-roboto-cond;
     text-transform: uppercase;
     letter-spacing: $default-letter-spacing;
+    font-weight: $bold;
   }
   h4{
     &.about{
       text-transform: capitalize;
       letter-spacing: 0;
-
+      font-weight: $regular;
     }
   }
   p, a, ul, li{
@@ -67,5 +69,9 @@ body{
       padding-bottom:$spacing-small;
     }
   }
-
+  img{
+    &.about{
+      max-width: 100%;
+    }
+  }
 }

@@ -9,11 +9,15 @@
       font-family:$font-roboto-cond;
       font-size: $display-regular;
       font-weight: $light;
+      padding:0 $spacing-xlarge;
       &.source a{
         font-size:$body-small;
         color:$white !important;
         text-transform: uppercase;
         letter-spacing: $default-letter-spacing;
+        &:hover{
+          text-decoration: none;
+        }
       }
     }
   }

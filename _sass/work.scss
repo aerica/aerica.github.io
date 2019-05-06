@@ -1,5 +1,28 @@
+div.container.work{
+  padding-top:$spacing-large;
+  padding-left:0;
+  padding-right: 0;
+}
 .work-sample{
+  h2{
+    font-size:$display-xregular;
+    padding-bottom: $spacing-regular;
+    padding-right: $spacing-xxsmall;
+  }
   img{
     max-width: 100%;
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+      p{
+        margin-bottom: $spacing-xxsmall;
+      }
+      &:last-child{
+        margin-bottom:$spacing-small;
+      }
+    }
   }
 }
