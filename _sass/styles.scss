@@ -31,12 +31,6 @@ body{
     letter-spacing: $default-letter-spacing;
     font-weight: $bold;
   }
-  h4{
-    &.about{
-      text-transform: capitalize;
-      letter-spacing: 0;
-      font-weight: $regular;
-    }
   }
   p, a, ul, li{
     font-size:$body-regular;
