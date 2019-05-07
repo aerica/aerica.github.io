@@ -2,6 +2,15 @@
 padding-top:$spacing-regular;
 padding-bottom:$spacing-regular;
 text-align: center;
+p a{
+  font-size: $navigation-small;
+  font-family: $font-roboto-cond;
+  letter-spacing: $default-letter-spacing;
+  text-transform: uppercase;
+    &:hover{
+      text-decoration: none;
+    }
+}
   img{
     max-width: 125px;
     padding-bottom:$spacing-xsmall;
@@ -11,39 +20,20 @@ text-align: center;
     padding:0;
     li{
       display: inline;
-      padding-left: 12px;
-      padding-right: 12px;
-    }
-  }
-  h4 a{
-    font-size:$body-small;
-    text-transform: uppercase;
-    letter-spacing: $default-letter-spacing;
-    padding-bottom:$spacing-regular;
-    &:hover{
-      text-decoration: none;
+      padding-left: $spacing-xxsmall;
+      padding-right: $spacing-xxsmall;
     }
   }
   &.white{
     background-color:$white;
-    h4 a{
-      color:$black;
-    }
-    ul{
-      li{
-        a{color:$black;}
+      a{
+        color:$black;
       }
-    }
     }
   &.red{
     background: $red-gradient;
-    h4 a{
-      color:$white;
-    }
-    ul{
-      li{
-        a{color:$white;}
+      a{
+        color:$white;
       }
-    }
     }
   }

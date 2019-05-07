@@ -1,3 +1,22 @@
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 12px !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
 $font-montserrat: 'Montserrat', sans-serif;
 $font-roboto-cond:'Roboto Condensed', sans-serif;
 
@@ -10,12 +29,13 @@ $display-regular:32px;
 $display-xregular:40px;
 $display-large:48px;
 
-$body-small:12px;
-$body-regular:16px;
-$body-large:20px;
+$body-small:16px;
+$body-regular:20px;
+$body-large:24px;
 
-$grid-columns: 12 !default;
-$grid-gutter-width: 12px !default;
+$navigation-regular:14px;
+$navigation-small:12px;
+
 
 $white:#ffffff;
 $black:#181818;
@@ -31,6 +51,8 @@ $spacing-small:32px;
 $spacing-xsmall:20px;
 $spacing-xxsmall:12px;
 
+
 $default-letter-spacing:1.5px;
+$small-letter-spacing:1px;
 
 $link-underline:solid 1px $red;

@@ -1,13 +1,19 @@
-div.container.work{
+.work{
   padding-top:$spacing-large;
   padding-left:0;
   padding-right: 0;
-}
-.work-sample{
-  h2{
-    font-size:$display-xregular;
-    padding-bottom: $spacing-regular;
-    padding-right: $spacing-xxsmall;
+  .h2{
+      font-family: $font-montserrat;
+      font-size:$display-regular;
+      font-weight:$bold;
+      margin-bottom:$spacing-small;
+  }
+  &.example{
+    .h2{
+        font-family: $font-roboto-cond;
+        text-transform: uppercase;
+        letter-spacing: $default-letter-spacing;
+    }
   }
   img{
     max-width: 100%;

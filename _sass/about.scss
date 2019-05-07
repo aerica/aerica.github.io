@@ -1,4 +1,23 @@
 .about{
+  .hero{
+    padding-top:$spacing-xlarge;
+    padding-bottom:$spacing-xxsmall;
+    p{
+      font-family: $font-roboto-cond;
+    }
+    h1{
+        padding-top:$spacing-xlarge;
+        font-size:$display-xregular;
+    }
+  }
+  .h2{
+      font-family: $font-roboto-cond;
+      font-size:$display-regular;
+      font-weight:$bold;
+      text-transform: uppercase;
+      letter-spacing: $default-letter-spacing;
+      margin-bottom:$spacing-small;
+  }
   ul{
     list-style: none;
     padding: 0;
@@ -24,6 +43,11 @@
         color:$red;
         text-decoration: none;
         border-bottom: $link-underline;
+    }
+  }
+  .hero{
+    img{
+      max-width: 100%;
     }
   }
 }
