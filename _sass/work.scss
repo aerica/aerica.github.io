@@ -34,18 +34,17 @@
         font-size:$display-small;
         margin-top:0;
     }
-    .date{
-      font-family: $font-roboto-cond;
-      text-transform: uppercase;
-      letter-spacing: $default-letter-spacing;
-      font-size:$body-small;
-      font-weight: $bold;
-    }
     .content{
       padding-top:0;
       margin-bottom:$spacing-large;
     }
     .small{padding-right:$spacing-regular;}
+    .btn.secondary{
+      margin-left: 0;
+    }
+    img{
+      padding-bottom: $spacing-large;
+    }
   }
   img{
     max-width: 100%;

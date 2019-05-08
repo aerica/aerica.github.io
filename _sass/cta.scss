@@ -1,0 +1,10 @@
+.cta{
+  padding-top:$spacing-regular;
+  padding-bottom:$spacing-regular;
+  text-align: center;
+  background: $red-gradient;
+  color:$white !important;
+  a.btn{
+    border-bottom: none !important;
+  }
+}

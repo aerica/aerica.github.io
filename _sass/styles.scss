@@ -18,9 +18,9 @@ body{
   }
   p.large{
     font-size:$body-large;
-    margin-bottom: $spacing-small
+    margin-bottom: $spacing-small;
   }
-  p.small{
+  p.small, p.small a{
     font-size:$body-small;
     margin-bottom: $spacing-xsmall;
   }
@@ -28,21 +28,46 @@ body{
   a{
     text-decoration: none;
     color:$red;
+
+    &:hover{
+      color:$red;
+      text-decoration: none;
+      border-bottom: $link-underline;
+    }
     &.btn{
-      padding-top:$spacing-xsmall;
-      padding-bottom:$spacing-xsmall;
-      padding-left:$spacing-small;
-      padding-right:$spacing-small;
       font-family: $font-roboto-cond;
       font-size: $navigation-regular;
       text-transform: uppercase;
       letter-spacing: $default-letter-spacing;
       text-decoration: none;
-      border-bottom: none;
+
       &.primary{
+        padding-top:$spacing-xsmall;
+        padding-bottom:$spacing-xsmall;
+        padding-left:$spacing-small;
+        padding-right:$spacing-small;
+        border-bottom: none;
+        border-radius:4px;
         &.on-white{
           color:$white;
           background:$red;
+        }
+
+        &.on-red{
+        background:$white;
+        }
+        &:hover{
+        opacity: 0.9;
+        }
+      }
+      &.secondary{
+        margin-left:$spacing-small;
+        padding-left: 0;
+        padding-right: 0;
+        border-bottom: 1px solid $white;
+        border-radius:0;
+        &:hover{
+          border-bottom: $link-underline;
         }
       }
     }
@@ -56,5 +81,21 @@ body{
   .hero{
     padding-top:$spacing-xlarge;
     padding-bottom:$spacing-large;
+  }
+
+  .date{
+    font-family: $font-roboto-cond;
+    text-transform: uppercase;
+    letter-spacing: $default-letter-spacing;
+    font-size:$body-small;
+    font-weight: $bold;
+    a{
+      font-size:$body-small !important;
+    }
+  }
+  p.large.title{
+      padding-bottom: 0;
+      margin-bottom: 0;
+      padding-top: $spacing-small;
   }
 }

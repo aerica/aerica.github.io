@@ -1,20 +1,21 @@
 .footer{
-padding-top:$spacing-regular;
-padding-bottom:$spacing-regular;
-text-align: center;
-p a{
-  font-size: $navigation-small;
-  font-family: $font-roboto-cond;
-  letter-spacing: $default-letter-spacing;
-  text-transform: uppercase;
-    &:hover{
-      text-decoration: none;
-    }
-}
+  padding-top:$spacing-regular;
+  padding-bottom:$spacing-regular;
+  text-align: center;
+
+  a{
+    font-family: $font-roboto-cond;
+    color:$black !important;
+    text-transform: uppercase;
+    letter-spacing: $default-letter-spacing;
+    font-size: $navigation-regular;
+    border-bottom: none !important;
+  }
   img{
     max-width: 125px;
     padding-bottom:$spacing-xsmall;
   }
+
   ul{
     margin:0;
     padding:0;
@@ -22,6 +23,9 @@ p a{
       display: inline;
       padding-left: $spacing-xxsmall;
       padding-right: $spacing-xxsmall;
+      &:hover{
+        opacity: 0.75;
+      }
     }
   }
   &.white{
@@ -33,7 +37,7 @@ p a{
   &.red{
     background: $red-gradient;
       a{
-        color:$white;
+        color:$white !important;
       }
     }
   }
