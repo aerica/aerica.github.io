@@ -1,6 +1,23 @@
 .container-fluid.work{
   &.landing{
     padding-right:0;
+    padding-left:0;
+    .col-md-4{
+      padding-left:$spacing-regular;
+      padding-bottom:$spacing-regular;
+    }
+    .col-md-8{
+      background-color:$red;
+      padding-left:0;
+      margin-left:0;
+    }
+
+    @include browse-large{
+      padding-left:$spacing-xlarge;
+      .col-md-4{
+        padding-left:$spacing-xxsmall;
+      }
+    }
   }
   padding-top:$spacing-large;
   .row.content{
@@ -8,42 +25,23 @@
     padding-bottom:0;
     margin-right: 0;
   }
-  .col-8{
+  .col-md-8{
     padding-right:0;
   }
   .h2{
       font-family: $font-montserrat;
-      font-size:$display-regular;
       font-weight:$bold;
       margin-bottom:$spacing-small;
-      margin-top:$spacing-large;
-      padding-right:$spacing-regular ;
-  }
-  &.example{
-    h1, p.large{
-      padding-bottom: 0;
-      margin-bottom: 0;
+      font-size:$display-small;
+      margin-top:$spacing-small;
+
+      @include browse-large{
+        font-size:$display-regular;
+        padding-right:$spacing-regular;
     }
-    .hero{
-      padding-top:$spacing-large;
-    }
-    .h2{
-        font-family: $font-roboto-cond;
-        text-transform: uppercase;
-        letter-spacing: $default-letter-spacing;
-        font-size:$display-small;
-        margin-top:0;
-    }
-    .content{
-      padding-top:0;
-      margin-bottom:$spacing-large;
-    }
-    .small{padding-right:$spacing-regular;}
-    .btn.secondary{
-      margin-left: 0;
-    }
-    img{
-      padding-bottom: $spacing-large;
+
+      @include browse-x-large{
+        margin-top:$spacing-large;
     }
   }
   img{
@@ -67,8 +65,61 @@
         }
       }
       &:last-child{
-        margin-bottom:$spacing-large;
+        margin-bottom:$spacing-xsmall;
+        @include browse-x-large{
+          margin-bottom:$spacing-large;
+        }
       }
+    }
+  }
+  &.example{
+    h1, p.large{
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    h1{
+      font-size:$display-regular;
+      line-height: 125%;
+      @include browse-medium{
+        font-size:$display-large;
+        line-height: 150%;
+      }
+    }
+    .hero{
+      padding-top:$spacing-large;
+    }
+    .h2{
+        font-family: $font-roboto-cond;
+        text-transform: uppercase;
+        letter-spacing: $default-letter-spacing;
+        font-size:$display-xsmall;
+        margin-top:0;
+        @include browse-medium{
+          font-size:$display-small;
+        }
+    }
+    .content{
+      padding-top:0;
+
+      @include browse-large{
+          margin-bottom:$spacing-large;
+      }
+    }
+    .small{
+      //padding-right:$spacing-regular;
+      @include browse-large{
+        padding-right:$spacing-xsmall;
+    }
+      @include browse-x-large{
+        padding-right:$spacing-small;
+    }
+  }
+    .btn.secondary{
+      margin-left: 0;
+    }
+    img{
+      padding-bottom: $spacing-large;
+
     }
   }
 }

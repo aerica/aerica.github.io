@@ -2,8 +2,14 @@ body{
   font-family: $font-montserrat;
   color:$black;
   .container-fluid{
-    padding-left:100px;
-    padding-right:100px;
+    padding-left:0;
+    padding-right:0;
+    padding-left:$spacing-xsmall;
+    padding-right:$spacing-xsmall;
+    @include browse-large{
+      padding-left:$spacing-xlarge;
+      padding-right:$spacing-xlarge;
+    }
   }
   h1{
     font-size:$display-large;
@@ -36,28 +42,34 @@ body{
     }
     &.btn{
       font-family: $font-roboto-cond;
-      font-size: $navigation-regular;
+      font-size: $navigation-small;
       text-transform: uppercase;
       letter-spacing: $default-letter-spacing;
       text-decoration: none;
 
       &.primary{
-        padding-top:$spacing-xsmall;
-        padding-bottom:$spacing-xsmall;
-        padding-left:$spacing-small;
-        padding-right:$spacing-small;
+        padding-top:$spacing-xxsmall;
+        padding-bottom:$spacing-xxsmall;
+        padding-left:$spacing-xxsmall;
+        padding-right:$spacing-xxsmall;
         border-bottom: none;
         border-radius:4px;
         &.on-white{
           color:$white;
           background:$red;
         }
-
         &.on-red{
         background:$white;
         }
         &:hover{
         opacity: 0.9;
+        }
+
+        @include browse-x-small{
+          padding-top:$spacing-xsmall;
+          padding-bottom:$spacing-xsmall;
+          padding-left:$spacing-small;
+          padding-right:$spacing-small;
         }
       }
       &.secondary{
@@ -69,6 +81,10 @@ body{
         &:hover{
           border-bottom: $link-underline;
         }
+      }
+
+      @include browse-x-small{
+        font-size: $navigation-regular;
       }
     }
   }

@@ -6,9 +6,14 @@
   text-align: center;
   p{
     font-family:$font-roboto-cond;
-    font-size: $display-small;
     font-weight: $light;
-    padding:0 $spacing-xlarge;
+    font-size: $body-large;
+
+    padding:0 $spacing-xxsmall;
+    @include browse-large{
+      padding:0 $spacing-small;
+      font-size: $display-small;
+    }
     &.source a{
       font-size:$navigation-small;
       color:$white !important;

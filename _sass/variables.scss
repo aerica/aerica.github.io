@@ -9,6 +9,7 @@ $container-max-widths: (
   xl: 1140px
 ) !default;
 
+
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -58,3 +59,49 @@ $small-letter-spacing:1px;
 $link-underline:solid 1px $red;
 
 $shadow-light:0px 0px 8px rgba(90, 90, 90, 0.15);
+
+// breakpoints
+$break-xx-small: 320px;
+$break-x-small: 375px;
+$break-small: 480px;
+$break-medium: 599px;
+$break-large: 992px;
+$break-x-large: 1140px;
+$break-xx-large: 1200px;
+
+// MIXINS:
+@mixin browse-xx-small {
+   @media only screen and (min-width: $break-xx-small){
+    @content;
+  }
+}
+@mixin browse-x-small {
+   @media only screen and (min-width: $break-x-small){
+    @content;
+  }
+}
+@mixin browse-small {
+   @media only screen and (min-width: $break-small){
+    @content;
+  }
+}
+@mixin browse-medium {
+   @media only screen and (min-width: $break-medium){
+    @content;
+  }
+}
+@mixin browse-large {
+   @media only screen and (min-width: $break-large){
+    @content;
+  }
+}
+@mixin browse-x-large {
+   @media only screen and (min-width: $break-x-large){
+    @content;
+  }
+}
+@mixin browse-xx-large {
+   @media only screen and (min-width: $break-xx-large){
+    @content;
+  }
+}

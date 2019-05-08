@@ -1,14 +1,29 @@
 .about{
   .hero{
-    padding-top:$spacing-xlarge;
-    padding-bottom:$spacing-xxsmall;
+    h1{
+      font-size:$display-xsmall;
+
+      @include browse-medium{
+        font-size:$display-small;
+      }
+      @include browse-x-large{
+        font-size:$display-regular;
+      }
+    }
+    img{
+      max-width: 50%;
+    }
     p{
       font-family: $font-roboto-cond;
     }
-    h1{
-        padding-top:$spacing-xlarge;
-        font-size:$display-regular;
+    @include browse-large{
+      padding-top:$spacing-xlarge;
+      padding-bottom:$spacing-xxsmall;
+      h1{padding-top:$spacing-regular;}
+      img{max-width: 100%;}
     }
+
+
   }
   .h2{
       font-family: $font-roboto-cond;
@@ -43,11 +58,6 @@
         color:$red;
         text-decoration: none;
         border-bottom: $link-underline;
-    }
-  }
-  .hero{
-    img{
-      max-width: 100%;
     }
   }
 }

@@ -1,6 +1,14 @@
 .home{
   h1{
-    padding-right:$spacing-xxlarge;
-    padding-top:$spacing-regular;
+    font-size:$display-small;
+    padding-bottom:$spacing-xsmall;
+    @include browse-large{
+      padding-top:$spacing-regular;
+      padding-right:$spacing-xlarge;
+    }
+    @include browse-x-large{
+      padding-top:$spacing-regular;
+      padding-right:$spacing-xxlarge;
+    }
   }
 }
