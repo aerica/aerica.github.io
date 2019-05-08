@@ -1,7 +1,10 @@
 body{
   font-family: $font-montserrat;
   color:$black;
-
+  .container-fluid{
+    padding-left:100px;
+    padding-right:100px;
+  }
   h1{
     font-size:$display-large;
     line-height: 150%;

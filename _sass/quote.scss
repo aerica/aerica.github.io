@@ -4,20 +4,18 @@
   padding-top:$spacing-regular;
   padding-bottom:$spacing-regular;
   text-align: center;
-  div{
-    p{
-      font-family:$font-roboto-cond;
-      font-size: $display-regular;
-      font-weight: $light;
-      padding:0 $spacing-xlarge;
-      &.source a{
-        font-size:$navigation-small;
-        color:$white !important;
-        text-transform: uppercase;
-        letter-spacing: $default-letter-spacing;
-        &:hover{
-          text-decoration: none;
-        }
+  p{
+    font-family:$font-roboto-cond;
+    font-size: $display-small;
+    font-weight: $light;
+    padding:0 $spacing-xlarge;
+    &.source a{
+      font-size:$navigation-small;
+      color:$white !important;
+      text-transform: uppercase;
+      letter-spacing: $default-letter-spacing;
+      &:hover{
+        text-decoration: none;
       }
     }
   }

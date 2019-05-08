@@ -1,19 +1,51 @@
-.work{
+.container-fluid.work{
+  &.landing{
+    padding-right:0;
+  }
   padding-top:$spacing-large;
-  padding-left:0;
-  padding-right: 0;
+  .row.content{
+    padding-top:0;
+    padding-bottom:0;
+    margin-right: 0;
+  }
+  .col-8{
+    padding-right:0;
+  }
   .h2{
       font-family: $font-montserrat;
       font-size:$display-regular;
       font-weight:$bold;
       margin-bottom:$spacing-small;
+      margin-top:$spacing-large;
+      padding-right:$spacing-regular ;
   }
   &.example{
+    h1, p.large{
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    .hero{
+      padding-top:$spacing-large;
+    }
     .h2{
         font-family: $font-roboto-cond;
         text-transform: uppercase;
         letter-spacing: $default-letter-spacing;
+        font-size:$display-small;
+        margin-top:0;
     }
+    .date{
+      font-family: $font-roboto-cond;
+      text-transform: uppercase;
+      letter-spacing: $default-letter-spacing;
+      font-size:$body-small;
+      font-weight: $bold;
+    }
+    .content{
+      padding-top:0;
+      margin-bottom:$spacing-large;
+    }
+    .small{padding-right:$spacing-regular;}
   }
   img{
     max-width: 100%;
@@ -22,12 +54,21 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    font-family: $font-roboto-cond;
+    color:$grey !important;
+    text-transform: uppercase;
+    letter-spacing: $default-letter-spacing;
     li{
-      p{
-        margin-bottom: $spacing-xxsmall;
+      a{
+        color:$grey !important;
+        font-size: $navigation-regular;
+        &:hover{
+          text-decoration: none;
+          border-bottom: $link-underline;
+        }
       }
       &:last-child{
-        margin-bottom:$spacing-small;
+        margin-bottom:$spacing-large;
       }
     }
   }
