@@ -30,6 +30,7 @@ $display-small:32px;
 $display-regular:40px;
 $display-large:48px;
 
+$body-xsmall:12px;
 $body-small:16px;
 $body-regular:20px;
 $body-large:24px;
@@ -68,6 +69,11 @@ $break-medium: 599px;
 $break-large: 992px;
 $break-x-large: 1140px;
 $break-xx-large: 1200px;
+
+// transitions
+$transition-fast-ease: 0.1s ease;
+$transition-fast-ease-in: 0.1s ease-in;
+$transition-background: background 0.5s ease;
 
 // MIXINS:
 @mixin browse-xx-small {

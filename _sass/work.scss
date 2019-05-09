@@ -18,6 +18,35 @@
         padding-left:$spacing-xxsmall;
       }
     }
+
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-family: $font-roboto-cond;
+      color:$grey !important;
+      text-transform: uppercase;
+      letter-spacing: $default-letter-spacing;
+      li{
+        a{
+          color:$grey !important;
+          font-size: $navigation-small;
+          @include browse-medium{
+            font-size: $navigation-regular;
+          }
+          &:hover{
+            text-decoration: none;
+            border-bottom: $link-underline;
+          }
+        }
+        &:last-child{
+          margin-bottom:$spacing-xsmall;
+          @include browse-x-large{
+            margin-bottom:$spacing-large;
+          }
+        }
+      }
+    }
   }
   padding-top:$spacing-large;
   .row.content{
@@ -47,31 +76,6 @@
   img{
     max-width: 100%;
   }
-  ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-family: $font-roboto-cond;
-    color:$grey !important;
-    text-transform: uppercase;
-    letter-spacing: $default-letter-spacing;
-    li{
-      a{
-        color:$grey !important;
-        font-size: $navigation-regular;
-        &:hover{
-          text-decoration: none;
-          border-bottom: $link-underline;
-        }
-      }
-      &:last-child{
-        margin-bottom:$spacing-xsmall;
-        @include browse-x-large{
-          margin-bottom:$spacing-large;
-        }
-      }
-    }
-  }
   &.example{
     h1, p.large{
       padding-bottom: 0;
@@ -94,7 +98,7 @@
         letter-spacing: $default-letter-spacing;
         font-size:$display-xsmall;
         margin-top:0;
-        @include browse-medium{
+        @include browse-x-large{
           font-size:$display-small;
         }
     }
@@ -106,6 +110,7 @@
       }
     }
     .small{
+      font-size:$body-xsmall;
       //padding-right:$spacing-regular;
       @include browse-large{
         padding-right:$spacing-xsmall;
