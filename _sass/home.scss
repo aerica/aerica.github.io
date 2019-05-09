@@ -1,8 +1,10 @@
 .home{
+  background-color: #f3f3f3;
   h1{
     font-size:$display-xsmall;
     padding-bottom:$spacing-xsmall;
     @include browse-medium{
+      font-size:$display-small;
       padding-right:$spacing-xlarge;
     }
     @include browse-large{

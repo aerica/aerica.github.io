@@ -41,7 +41,7 @@
     margin: 0;
     padding-bottom: $spacing-regular;
     li{
-      padding-bottom: $spacing-xxsmall;
+      //padding-bottom: $spacing-xxsmall;
       display:inline;
       @include browse-large{
         display:block;

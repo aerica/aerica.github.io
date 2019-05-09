@@ -1,13 +1,18 @@
 .container-fluid.work{
+  padding-top:0;
   &.landing{
+
     padding-right:0;
     padding-left:0;
     .col-md-4{
-      padding-left:$spacing-regular;
-      padding-bottom:$spacing-regular;
+      padding-left:$spacing-small;
+      padding-bottom:$spacing-small;
+      @include browse-x-large{
+        padding-bottom:$spacing-regular;
+      }
     }
     .col-md-8{
-      background-color:$red;
+      //background-color:$red;
       padding-left:0;
       margin-left:0;
     }
@@ -47,8 +52,26 @@
         }
       }
     }
+    .h2{
+        font-family: $font-montserrat;
+        font-weight:$bold;
+        margin-bottom:$spacing-small;
+        font-size:$display-xsmall;
+        margin-top:$spacing-small;
+
+        @include browse-small{
+          font-size:$display-small;
+      }
+        @include browse-large{
+          font-size:$display-regular;
+          padding-right:$spacing-regular;
+      }
+
+        @include browse-x-large{
+          margin-top:$spacing-large;
+      }
+    }
   }
-  padding-top:$spacing-large;
   .row.content{
     padding-top:0;
     padding-bottom:0;
@@ -57,26 +80,18 @@
   .col-md-8{
     padding-right:0;
   }
-  .h2{
-      font-family: $font-montserrat;
-      font-weight:$bold;
-      margin-bottom:$spacing-small;
-      font-size:$display-small;
-      margin-top:$spacing-small;
 
-      @include browse-large{
-        font-size:$display-regular;
-        padding-right:$spacing-regular;
-    }
-
-      @include browse-x-large{
-        margin-top:$spacing-large;
-    }
-  }
   img{
     max-width: 100%;
   }
   &.example{
+        padding-top:$spacing-xxsmall;
+        @include browse-small{
+          padding-top:$spacing-xsmall;
+        }
+        @include browse-large{
+          padding-top:$spacing-regular;
+        }
     h1, p.large{
       padding-bottom: 0;
       margin-bottom: 0;
@@ -84,6 +99,7 @@
     h1{
       font-size:$display-regular;
       line-height: 125%;
+      padding-bottom:$spacing-xxsmall;
       @include browse-medium{
         font-size:$display-large;
         line-height: 150%;
@@ -91,16 +107,19 @@
     }
     .hero{
       padding-top:$spacing-large;
+      padding-bottom:$spacing-xsmall;
+      @include browse-medium{
+        padding-bottom:$spacing-large;
+      }
     }
     .h2{
         font-family: $font-roboto-cond;
         text-transform: uppercase;
         letter-spacing: $default-letter-spacing;
         font-size:$display-xsmall;
+        font-weight:$bold;
         margin-top:0;
-        @include browse-x-large{
-          font-size:$display-small;
-        }
+        margin-bottom: $spacing-xsmall;
     }
     .content{
       padding-top:0;
@@ -124,7 +143,6 @@
     }
     img{
       padding-bottom: $spacing-large;
-
     }
   }
 }

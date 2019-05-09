@@ -20,12 +20,21 @@ body{
     padding-bottom: $spacing-large;
   }
   p, a, ul, li{
-    font-size:$body-regular;
+    font-size:$body-small;
     font-weight:$regular;
+    @include browse-medium{
+      font-size:$body-regular;
+    }
   }
   p.large{
-    font-size:$body-large;
+    font-size:$body-small;
     margin-bottom: $spacing-small;
+    @include browse-x-small{
+      font-size:$body-regular;
+    }
+    @include browse-medium{
+      font-size:$body-large;
+    }
   }
   p.small, p.small a{
     font-size:$body-small;
@@ -51,8 +60,8 @@ body{
       &.primary{
         padding-top:$spacing-xxsmall;
         padding-bottom:$spacing-xxsmall;
-        padding-left:$spacing-xxsmall;
-        padding-right:$spacing-xxsmall;
+        padding-left:$spacing-xsmall;
+        padding-right:$spacing-xsmall;
         border-bottom: none;
         border-radius:4px;
         &.on-white{
@@ -66,7 +75,7 @@ body{
         opacity: 0.9;
         }
 
-        @include browse-x-small{
+        @include browse-medium{
           padding-top:$spacing-xsmall;
           padding-bottom:$spacing-xsmall;
           padding-left:$spacing-small;
@@ -74,17 +83,21 @@ body{
         }
       }
       &.secondary{
-        margin-left:$spacing-small;
+        margin-left:$spacing-xsmall;
         padding-left: 0;
         padding-right: 0;
         border-bottom: 1px solid $white;
         border-radius:0;
+        border-bottom: 1px solid rgba(0,0,0,0);
         &:hover{
           border-bottom: $link-underline;
         }
+        @include browse-medium{
+          margin-left:$spacing-small;
+        }
       }
 
-      @include browse-x-small{
+      @include browse-medium{
         font-size: $navigation-regular;
       }
     }
@@ -104,10 +117,16 @@ body{
     font-family: $font-roboto-cond;
     text-transform: uppercase;
     letter-spacing: $default-letter-spacing;
-    font-size:$body-small;
+    font-size:$body-xsmall;
     font-weight: $bold;
     a{
-      font-size:$body-small !important;
+      font-size:$body-xsmall !important;
+      @include browse-small{
+        font-size:$body-small !important;
+      }
+    }
+    @include browse-small{
+      font-size:$body-small;
     }
   }
   p.large.title{
