@@ -1,20 +1,52 @@
 .home{
   background-color: #f3f3f3;
+  //background-image: url("/assets/images/home-hero-bg.png");
+  background-size: cover;
+
+.background-container{
+  //position: absolute;
+  //top:0;
+//  right:0;
+  overflow:hidden;
+  height:400px;
+}
+
+.sliding-background{
+  background-image: url("/assets/images/home-hero-bg-scroll.png");
+  background-repeat: repeat-y;
+  min-height: 100%;
+  height:5238px;
+  width:100%;
+  animation: slide 120s linear infinite;
+}
+
+@keyframes slide {
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(0, -1746px, 0); /* The image width */
+  }
+}
   h1{
     font-size:$display-xsmall;
     padding-bottom:$spacing-xsmall;
     @include browse-medium{
       font-size:$display-small;
-      padding-right:$spacing-xlarge;
+      //padding-right:$spacing-xlarge;
     }
     @include browse-large{
       font-size:$display-regular;
       padding-top:$spacing-regular;
-        padding-right:0;
+      //  padding-right:0;
     }
     @include browse-x-large{
       padding-top:$spacing-regular;
-      padding-right:$spacing-xxlarge;
+    //  padding-right:$spacing-xlarge;
+    }
+    @include browse-xx-large{
+      padding-top:$spacing-regular;
+    //  padding-right:$spacing-xxxlarge;
     }
   }
 
