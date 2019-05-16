@@ -1,22 +1,4 @@
 
-$grid-columns: 12 !default;
-$grid-gutter-width: 12px !default;
-
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 992px,
-  xl: 1140px
-) !default;
-
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 480px,
-  md: 599px,
-  lg: 992px,
-  xl: 1200px
-) !default;
 
 $font-montserrat: 'Montserrat', sans-serif;
 $font-roboto-cond:'Roboto Condensed', sans-serif;
