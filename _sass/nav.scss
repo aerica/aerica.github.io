@@ -2,19 +2,27 @@
   z-index: 99999;
   width: 100%;
   background-color: $white;
+  opacity: 0.97;
   box-shadow: $shadow-light;
   position: fixed;
   padding-right: 0;
   padding-left: 0;
 
   img{
-    max-width:125px;
+    max-width:75px;
+    @include browse-medium{
+      max-width:125px;
+    }
   }
 }
 .nav{
-  padding-top:$spacing-xxsmall;
-  padding-bottom:$spacing-xxsmall;
+  padding-top:0;
+  padding-bottom:0;
 
+  @include browse-medium{
+    padding-top:$spacing-xxsmall;
+    padding-bottom:$spacing-xxsmall;
+  }
   a{
     font-family: $font-roboto-cond;
     color:$black !important;

@@ -3,6 +3,15 @@
   display: block;
   padding-top:$spacing-xsmall;
   padding-bottom:$spacing-small;
+  @include browse-small{
+    padding-bottom:$spacing-regular;
+  }
+  @include browse-medium{
+    padding-bottom:$spacing-small;
+  }
+  @include browse-large{
+    padding-bottom:$spacing-regular;
+  }
 }
 #home-hero::after{
   position: absolute;
@@ -57,6 +66,21 @@
     margin-bottom:0;
     @include browse-large{
       margin-bottom: $spacing-xxxsmall;
+    }
+  }
+  .row.d-none.d-sm-flex{
+    padding-top:0;
+
+    @include browse-small{
+      padding-top:$spacing-xxsmall;
+    }
+    @include browse-medium{
+      padding-top:$spacing-xxxsmall;
+    }
+    @include browse-large{
+      padding-top:$spacing-xsmall;
+    }
+    @include browse-x-large{
     }
   }
 }

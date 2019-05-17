@@ -116,8 +116,11 @@ body{
   }
 
   .hero{
-    padding-top:$spacing-large;
+    padding-top:$spacing-xregular;
     @include browse-medium{
+      padding-top:$spacing-large;
+    }
+    @include browse-large{
       padding-top:$spacing-xlarge;
     }
   }
