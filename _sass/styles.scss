@@ -2,36 +2,43 @@ html{scroll-behavior: smooth;}
 body{
   font-family: $font-montserrat;
   color:$black;
-  .container-fluid{
-    padding-left:0;
-    padding-right:0;
-    padding-left:$spacing-xsmall;
-    padding-right:$spacing-xsmall;
-    @include browse-large{
-      padding-left:$spacing-xlarge;
-      padding-right:$spacing-xlarge;
-    }
-  }
   h1{
     font-size:$display-large;
     line-height: 150%;
     font-weight:$bold;
     span{font-weight: $regular;}
-    padding-bottom: $spacing-large;
   }
-  p, a, ul, li{
-    font-size:$body-small;
+  p.h2{
+    font-size:$display-regular;
+    font-weight:$bold;
+    line-height: 125%;
+  }
+  p, ul, li{
+    font-size:$body-regular;
     font-weight:$regular;
+  }
+  a{
+    font-size:$body-xxsmall;
+    text-transform: uppercase;
+    letter-spacing: $small-letter-spacing;
+    color:$black !important;
+    @include browse-small{
+      font-size:$body-xsmall;
+    }
     @include browse-medium{
-      font-size:$body-regular;
+      font-size:$body-xxsmall;
+    }
+    @include browse-large{
+      font-size:$body-xsmall;
+    }
+    @include browse-x-large{
+      font-size:$body-small;
     }
   }
   p.large{
     font-size:$body-small;
     margin-bottom: $spacing-small;
-    @include browse-x-small{
-      font-size:$body-regular;
-    }
+
     @include browse-medium{
       font-size:$body-large;
     }
@@ -109,8 +116,10 @@ body{
   }
 
   .hero{
-    padding-top:$spacing-xlarge;
-    padding-bottom:$spacing-large;
+    padding-top:$spacing-large;
+    @include browse-medium{
+      padding-top:$spacing-xlarge;
+    }
   }
 
   .date{

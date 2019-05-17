@@ -6,6 +6,10 @@
   position: fixed;
   padding-right: 0;
   padding-left: 0;
+
+  img{
+    max-width:125px;
+  }
 }
 .nav{
   padding-top:$spacing-xxsmall;
