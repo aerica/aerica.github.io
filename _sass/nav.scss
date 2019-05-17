@@ -18,7 +18,16 @@
 .nav{
   padding-top:0;
   padding-bottom:0;
-
+.dropdown-menu{
+  left:-150%;
+  top:150%;
+    @include browse-small{
+      left:-250%;
+    }
+    @include browse-medium{
+      top:210%;
+    }
+}
   @include browse-medium{
     padding-top:$spacing-xxsmall;
     padding-bottom:$spacing-xxsmall;
@@ -28,8 +37,13 @@
     color:$black !important;
     text-transform: uppercase;
     letter-spacing: $default-letter-spacing;
-    font-size: $navigation-regular;
+    font-size: $navigation-small;
     border-bottom: none !important;
+
+    @include browse-medium{
+
+      font-size: $navigation-regular;
+    }
   }
   img{
     max-width: 100px;
@@ -49,4 +63,8 @@
       }
     }
   }
+}
+
+.nav-link{
+  padding:0 $spacing-xxsmall;
 }

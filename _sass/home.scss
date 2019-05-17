@@ -21,7 +21,7 @@
   top:0;
   bottom:0;
   opacity: 0.05;
-  background: url("/assets/images/home-hero-selfie.png");
+  background: url("/assets/images/home-hero-selfie-sketch.png");
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
@@ -35,9 +35,6 @@
   @include browse-medium{
     opacity: 0.0;
   }
-}
-#home-backpack{
-  background-color: #C51D4D;
 }
 .home{
   h1{
@@ -63,9 +60,10 @@
     font-family: $font-roboto-cond;
   }
   .col-12.col-sm-auto{
-    margin-bottom:0;
+    margin-bottom: $spacing-xxsmall;
+    padding:0;
     @include browse-large{
-      margin-bottom: $spacing-xxxsmall;
+      margin-bottom: $spacing-xsmall;
     }
   }
   .row.d-none.d-sm-flex{
