@@ -5,14 +5,37 @@
 #home-barkly{
   background-color: #042253;
 }
+#home-about{
+  background-color: #042253;
+}
 
-#home-backpack, #home-barkly{
-  padding-top:0;
+#home-backpack, #home-barkly, #home-about{
+  padding-top:$spacing-small;
+  padding-bottom:$spacing-small;
   color:$white;
   img{
     max-width: 100%;
   }
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  a{
+    font-family: $font-roboto-cond;
+    color:$white !important;
+    letter-spacing: $default-letter-spacing;
+  }
+  p.h2 a{
+    font-family: $font-montserrat;
+    text-transform: capitalize;
+    letter-spacing: 0;
+  }
 
+  @include browse-medium{
+    padding-top:0;
+    padding-bottom:0;
+  }
 }
 
 

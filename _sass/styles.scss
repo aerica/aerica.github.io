@@ -8,10 +8,19 @@ body{
     font-weight:$bold;
     span{font-weight: $regular;}
   }
-  p.h2{
-    font-size:$display-regular;
+  p.h2, p.h2 a{
+    font-size:$display-small;
     font-weight:$bold;
     line-height: 125%;
+    @include browse-small{
+      font-size:$display-regular;
+    }
+    @include browse-medium{
+      font-size:$display-small;
+    }
+    @include browse-large{
+      font-size:$display-regular;
+    }
   }
   p, ul, li{
     font-size:$body-regular;

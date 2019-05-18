@@ -1,6 +1,6 @@
 .quote{
-  background-color:$dark-grey;
-  color:$white;
+  background-color:$white;
+  color:$red;
   padding-top:$spacing-regular;
   padding-bottom:$spacing-regular;
   text-align: center;
@@ -16,7 +16,7 @@
     }
     &.source a{
       font-size:$navigation-small;
-      color:$white !important;
+      color:$black !important;
       text-transform: uppercase;
       letter-spacing: $default-letter-spacing;
       &:hover{
