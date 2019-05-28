@@ -94,7 +94,7 @@ body{
     &:hover{
       color:$red;
       text-decoration: none;
-      border-bottom: $link-underline;
+    //  border-bottom: $link-underline;
     }
     &.btn{
       font-family: $font-roboto-cond;
