@@ -28,6 +28,12 @@
   }
 }
 
+#backpack-content, #barkly-content{
+  img{
+    max-width: 100%;
+  }
+}
+
 #home-about{
     @include browse-medium{
       padding-top:$spacing-large;
