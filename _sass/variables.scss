@@ -1,22 +1,4 @@
 
-$grid-columns: 12 !default;
-$grid-gutter-width: 12px !default;
-
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 992px,
-  xl: 1140px
-) !default;
-
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 480px,
-  md: 599px,
-  lg: 992px,
-  xl: 1200px
-) !default;
 
 $font-montserrat: 'Montserrat', sans-serif;
 $font-roboto-cond:'Roboto Condensed', sans-serif;
@@ -25,13 +7,14 @@ $bold:700;
 $regular:400;
 $light:300;
 
-$display-xsmall:24px;
-$display-small:32px;
-$display-regular:40px;
-$display-large:48px;
+$display-xsmall:16px;
+$display-small:22px;
+$display-regular:30px;
+$display-large:38px;
 
+$body-xxsmall:10px;
 $body-xsmall:12px;
-$body-small:16px;
+$body-small:14px;
 $body-regular:20px;
 $body-large:24px;
 
@@ -40,19 +23,22 @@ $navigation-small:12px;
 
 
 $white:#ffffff;
-$black:#181818;
+$black:#000000;
 $dark-grey:#3F3F3F;
 $grey:#6A6A6A;
-$red:#B73C4B;
+$red:#d13438;
 $red-gradient:linear-gradient(155.6deg, #A93D5D -81.56%, #B63B4A 45.22%, #7F293E 164.31%);
 
+$spacing-xxxlarge:288px;
 $spacing-xxlarge:216px;
 $spacing-xlarge:128px;
-$spacing-large:72px;
+$spacing-large:88px;
+$spacing-xregular:72px;
 $spacing-regular:48px;
 $spacing-small:32px;
 $spacing-xsmall:20px;
 $spacing-xxsmall:12px;
+$spacing-xxxsmall:8px;
 
 
 $default-letter-spacing:1.5px;
@@ -63,13 +49,12 @@ $link-underline:solid 1px $red;
 $shadow-light:0px 0px 8px rgba(90, 90, 90, 0.15);
 
 // breakpoints
-$break-xx-small: 320px;
-$break-x-small: 375px;
-$break-small: 480px;
-$break-medium: 599px;
+//$break-xx-small: 320px;
+//$break-x-small: 375px;
+$break-small: 576px;
+$break-medium: 768px;
 $break-large: 992px;
-$break-x-large: 1140px;
-$break-xx-large: 1200px;
+$break-x-large: 1200px;
 
 // transitions
 $transition-fast-ease: 0.1s ease;
@@ -77,16 +62,16 @@ $transition-fast-ease-in: 0.1s ease-in;
 $transition-background: background 0.5s ease;
 
 // MIXINS:
-@mixin browse-xx-small {
-   @media only screen and (min-width: $break-xx-small){
-    @content;
-  }
-}
-@mixin browse-x-small {
-   @media only screen and (min-width: $break-x-small){
-    @content;
-  }
-}
+//@mixin browse-xx-small {
+//   @media only screen and (min-width: $break-xx-small){
+//    @content;
+//  }
+//}
+//@mixin browse-x-small {
+//   @media only screen and (min-width: $break-x-small){
+//    @content;
+//  }
+//}
 @mixin browse-small {
    @media only screen and (min-width: $break-small){
     @content;
@@ -104,11 +89,6 @@ $transition-background: background 0.5s ease;
 }
 @mixin browse-x-large {
    @media only screen and (min-width: $break-x-large){
-    @content;
-  }
-}
-@mixin browse-xx-large {
-   @media only screen and (min-width: $break-xx-large){
     @content;
   }
 }

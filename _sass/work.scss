@@ -1,149 +1,106 @@
-.container-fluid.work{
-  padding-top:0;
-  &.landing{
-
-    padding-right:0;
-    padding-left:0;
-    .col-md-4{
-      padding-left:$spacing-small;
-      padding-bottom:$spacing-small;
-      @include browse-x-large{
-        padding-bottom:$spacing-regular;
-      }
-    }
-    .col-md-8{
-      //background-color:$red;
-      padding-left:0;
-      margin-left:0;
-    }
-
-    @include browse-large{
-      padding-left:$spacing-xlarge;
-      .col-md-4{
-        padding-left:$spacing-xxsmall;
-      }
-    }
-
-    ul{
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      font-family: $font-roboto-cond;
-      color:$grey !important;
-      text-transform: uppercase;
-      letter-spacing: $default-letter-spacing;
-      li{
-        a{
-          color:$grey !important;
-          font-size: $navigation-small;
-          @include browse-medium{
-            font-size: $navigation-regular;
-          }
-          &:hover{
-            text-decoration: none;
-            border-bottom: $link-underline;
-          }
-        }
-        &:last-child{
-          margin-bottom:$spacing-xsmall;
-          @include browse-x-large{
-            margin-bottom:$spacing-large;
-          }
-        }
-      }
-    }
-    .h2{
-        font-family: $font-montserrat;
-        font-weight:$bold;
-        margin-bottom:$spacing-small;
-        font-size:$display-xsmall;
-        margin-top:$spacing-small;
-
-        @include browse-small{
-          font-size:$display-small;
-      }
-        @include browse-large{
-          font-size:$display-regular;
-          padding-right:$spacing-regular;
-      }
-
-        @include browse-x-large{
-          margin-top:$spacing-large;
-      }
-    }
-  }
-  .row.content{
-    padding-top:0;
-    padding-bottom:0;
-    margin-right: 0;
-  }
-  .col-md-8{
-    padding-right:0;
-  }
-
+#home-backpack, #home-barkly, #home-about{
+  padding-top:$spacing-small;
+  padding-bottom:$spacing-small;
+  color:$white;
   img{
     max-width: 100%;
   }
-  &.example{
-        padding-top:$spacing-xxsmall;
-        @include browse-small{
-          padding-top:$spacing-xsmall;
-        }
-        @include browse-large{
-          padding-top:$spacing-regular;
-        }
-    h1, p.large{
-      padding-bottom: 0;
-      margin-bottom: 0;
-    }
-    h1{
-      font-size:$display-regular;
-      line-height: 125%;
-      padding-bottom:$spacing-xxsmall;
-      @include browse-medium{
-        font-size:$display-large;
-        line-height: 150%;
-      }
-    }
-    .hero{
-      padding-top:$spacing-large;
-      padding-bottom:$spacing-xsmall;
-      @include browse-medium{
-        padding-bottom:$spacing-large;
-      }
-    }
-    .h2{
-        font-family: $font-roboto-cond;
-        text-transform: uppercase;
-        letter-spacing: $default-letter-spacing;
-        font-size:$display-xsmall;
-        font-weight:$bold;
-        margin-top:0;
-        margin-bottom: $spacing-xsmall;
-    }
-    .content{
-      padding-top:0;
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  a.link{
+    font-family: $font-roboto-cond;
+    color:$white !important;
+    letter-spacing: $default-letter-spacing;
+  }
+  p.h2 a{
+    font-family: $font-montserrat;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    color:$white !important;
+  }
 
-      @include browse-large{
-          margin-bottom:$spacing-large;
+  @include browse-medium{
+    padding-top:0;
+    padding-bottom:0;
+  }
+}
+
+#backpack-content, #barkly-content{
+  img{
+    max-width: 100%;
+  }
+}
+
+#home-about{
+    @include browse-medium{
+      padding-top:$spacing-large;
+      padding-bottom:$spacing-large;
+    }
+}
+
+
+.example{
+      padding-top:$spacing-xxsmall;
+      @include browse-small{
+        padding-top:$spacing-xsmall;
       }
-    }
-    .small{
-      font-size:$body-xsmall;
-      //padding-right:$spacing-regular;
       @include browse-large{
-        padding-right:$spacing-xsmall;
-    }
-      @include browse-x-large{
-        padding-right:$spacing-small;
+        padding-top:$spacing-regular;
+      }
+  h1, p.large{
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  h1{
+    font-size:$display-regular;
+    line-height: 125%;
+    padding-bottom:$spacing-xxsmall;
+    @include browse-medium{
+      font-size:$display-large;
+      line-height: 150%;
     }
   }
-    .btn.secondary{
-      margin-left: 0;
+  .hero{
+    padding-top:$spacing-large;
+    padding-bottom:$spacing-xsmall;
+    @include browse-medium{
+      padding-bottom:$spacing-large;
     }
-    img{
-      padding-bottom: $spacing-large;
-      max-height:750px;
+  }
+  .h2{
+      font-family: $font-roboto-cond;
+      text-transform: uppercase;
+      letter-spacing: $default-letter-spacing;
+      font-size:$display-xsmall;
+      font-weight:$bold;
+      margin-top:0;
+      margin-bottom: $spacing-xsmall;
+  }
+  .content{
+    padding-top:0;
+
+    @include browse-large{
+        margin-bottom:$spacing-large;
     }
+  }
+  .small{
+    font-size:$body-xsmall;
+    //padding-right:$spacing-regular;
+    @include browse-large{
+      padding-right:$spacing-xsmall;
+  }
+    @include browse-x-large{
+      padding-right:$spacing-small;
+  }
+}
+  .btn.secondary{
+    margin-left: 0;
+  }
+  img{
+    padding-bottom: $spacing-large;
+    max-height:750px;
   }
 }

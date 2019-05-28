@@ -1,83 +1,32 @@
-.about{
-  .hero{
+#home-about{
 
-    padding-bottom:$spacing-xxsmall;
-    h1{
-      font-size:$display-xsmall;
-      padding-bottom:0;
-      @include browse-medium{
-        font-size:$display-small;
-      }
-      @include browse-x-large{
-        font-size:$display-regular;
-      }
-    }
-    img{
-      max-width: 50%;
-      padding-bottom:$spacing-regular;
-    }
+  a{
+    color:$white !important;
     @include browse-large{
-      padding-top:$spacing-xlarge;
-      h1{padding-top:$spacing-regular;}
-      img{max-width: 100%;}
+    &.icon-at-small-li:before{content: "LinkedIn"}
+    &.icon-at-small-db:before{content: "Dribbble"}
+    &.icon-at-small-ig:before{content: "Instagram"}
     }
-  }
-  .h2{
-      font-family: $font-roboto-cond;
-      font-size:$display-xsmall;
-      font-weight:$bold;
-      text-transform: uppercase;
-      letter-spacing: $default-letter-spacing;
-      margin-bottom:$spacing-xxsmall;
-
-      @include browse-large{
-        font-size:$display-small;
-        margin-bottom:$spacing-small;
-      }
+    &:hover{
+      text-decoration: none;
+      border-bottom: $link-underline;
+    }
   }
   ul{
     list-style: none;
     padding: 0;
     margin: 0;
-    padding-bottom: $spacing-regular;
     li{
       //padding-bottom: $spacing-xxsmall;
       display:inline;
       @include browse-large{
         display:block;
       }
-      a{
-        font-family: $font-roboto-cond;
-        font-size:$navigation-small;
-        text-transform: uppercase;
-        letter-spacing: $default-letter-spacing;
-        color:$grey;
 
-        @include browse-small{
-        font-size:$navigation-regular;
-        }
-        @include browse-large{
-        &.icon-at-small-li:before{content: "LinkedIn"}
-        &.icon-at-small-db:before{content: "Dribbble"}
-        &.icon-at-small-ig:before{content: "Instagram"}
-        }
-        &:hover{
-          text-decoration: none;
-          border-bottom: $link-underline;
-        }
-      }
       i.fas, i.fab{
-        color:$grey;
         font-size: $body-xsmall;
         padding-left:$spacing-xxsmall;
       }
-    }
-  }
-  p a{
-    &:hover{
-        color:$red;
-        text-decoration: none;
-        border-bottom: $link-underline;
     }
   }
 }

@@ -1,21 +1,93 @@
+#home-backpack{
+  background-color: #C51D4D;
+}
+#home-barkly{
+  background-color: #042253;
+}
+#home-about{
+  background-color: $red;
+}
+#home-hero{
+  position: relative;
+  display: block;
+  padding-top:$spacing-xsmall;
+  padding-bottom:$spacing-small;
+  @include browse-small{
+    padding-bottom:$spacing-regular;
+  }
+  @include browse-medium{
+    padding-bottom:$spacing-small;
+  }
+  @include browse-large{
+    padding-bottom:$spacing-regular;
+  }
+}
+#home-hero::after{
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  left:0;
+  top:0;
+  bottom:0;
+  opacity: 0.05;
+  background: url("/assets/images/home-hero-selfie-sketch.png");
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  margin-top:30px;
+  content:"";
+  @include browse-small{
+    background-size: 70%;
+    background-size: 70%;
+    background-position: bottom right;
+  }
+  @include browse-medium{
+    opacity: 0.0;
+  }
+}
 .home{
-  background-color: #f3f3f3;
   h1{
     font-size:$display-xsmall;
-    padding-bottom:$spacing-xsmall;
+    line-height:200%;
+    @include browse-small{
+      font-size:$display-regular;
+    }
     @include browse-medium{
       font-size:$display-small;
-      padding-right:$spacing-xlarge;
     }
     @include browse-large{
-      font-size:$display-regular;
-      padding-top:$spacing-regular;
-        padding-right:0;
+    font-size:$display-regular;
     }
     @include browse-x-large{
-      padding-top:$spacing-regular;
-      padding-right:$spacing-xxlarge;
+    font-size:$display-large;
     }
   }
+  img{
+    max-width:100%;
+  }
+  a{
+    font-family: $font-roboto-cond;
+  }
+  .col-12.col-sm-auto{
+    margin-bottom: $spacing-xxsmall;
+    padding:0;
+    @include browse-large{
+      margin-bottom: $spacing-xsmall;
+    }
+  }
+  .row.d-none.d-sm-flex{
+    padding-top:0;
 
+    @include browse-small{
+      padding-top:$spacing-xxsmall;
+    }
+    @include browse-medium{
+      padding-top:$spacing-xxxsmall;
+    }
+    @include browse-large{
+      padding-top:$spacing-xsmall;
+    }
+    @include browse-x-large{
+    }
+  }
 }
