@@ -2,8 +2,8 @@
   z-index: 99999;
   width: 100%;
   background-color: $white;
-  opacity: 0.97;
-  box-shadow: $shadow-light;
+//  opacity: 0.97;
+//  box-shadow: $shadow-light;
   position: fixed;
   padding-right: 0;
   padding-left: 0;
@@ -21,6 +21,14 @@
     &:hover{
     border-bottom: none !important;
     }
+  }
+  p{
+    color:$red;
+    font-weight:$bold;
+    font-size:$display-xsmall;
+      @include browse-small{
+      font-size:$display-small;
+      }
   }
 }
 .nav{

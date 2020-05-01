@@ -42,10 +42,12 @@
 }
 .home{
   h1{
+    padding-top:$spacing-xxxsmall;
     font-size:$display-small;
-    line-height:200%;
+    line-height:150%;
     @include browse-small{
       font-size:$display-regular;
+      padding-top:$spacing-xsmall;
     }
     @include browse-x-large{
     font-size:$display-large;
@@ -53,9 +55,6 @@
   }
   img{
     max-width:100%;
-  }
-  a{
-    font-family: $font-roboto-cond;
   }
   .col-12.col-sm-auto{
     margin-bottom: $spacing-xxsmall;
@@ -83,12 +82,18 @@
     ul{
       margin:0;
       padding:0;
+      padding-top:$spacing-xxsmall;
+      list-style: none;
       li{
-        display: inline;
-        padding-left: $spacing-xxsmall;
+      //  display: inline;
+      //  padding-left: $spacing-xxsmall;
         padding-right: $spacing-xxsmall;
+        padding-bottom: $spacing-xxsmall;
         &:hover{
           opacity: 0.75;
+        }
+        .fab, .fas{
+          padding-right: $spacing-xxsmall;
         }
       }
     }
