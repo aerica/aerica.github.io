@@ -30,11 +30,6 @@
   top:0;
   bottom:0;
   opacity: 0.05;
-  background: url("/assets/images/home-hero-selfie-sketch.png");
-  background-size: cover;
-  background-position: top left;
-  background-repeat: no-repeat;
-  margin-top:30px;
   content:"";
   @include browse-small{
     background-size: 70%;
@@ -90,4 +85,17 @@
     @include browse-x-large{
     }
   }
+
+    ul{
+      margin:0;
+      padding:0;
+      li{
+        display: inline;
+        padding-left: $spacing-xxsmall;
+        padding-right: $spacing-xxsmall;
+        &:hover{
+          opacity: 0.75;
+        }
+      }
+    }
 }

@@ -6,7 +6,7 @@ body{
     font-size:$display-large;
     line-height: 150%;
     font-weight:$bold;
-    span{font-weight: $regular;}
+    padding-bottom:$spacing-small;
   }
   p.h2, p.h2 a{
     font-size:$display-small;
@@ -155,12 +155,12 @@ body{
   }
 
   .hero{
-    padding-top:$spacing-xregular;
+    padding-top:$spacing-regular;
     @include browse-medium{
-      padding-top:$spacing-large;
+    //  padding-top:$spacing-large;
     }
     @include browse-large{
-      padding-top:$spacing-xlarge;
+      //padding-top:$spacing-xlarge;
     }
   }
 
