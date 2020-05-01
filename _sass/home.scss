@@ -42,16 +42,10 @@
 }
 .home{
   h1{
-    font-size:$display-xsmall;
+    font-size:$display-small;
     line-height:200%;
     @include browse-small{
       font-size:$display-regular;
-    }
-    @include browse-medium{
-      font-size:$display-small;
-    }
-    @include browse-large{
-    font-size:$display-regular;
     }
     @include browse-x-large{
     font-size:$display-large;
